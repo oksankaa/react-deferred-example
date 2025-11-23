@@ -6,10 +6,6 @@ function App() {
   return (
     <>
       <SearchSmooth />
-      <br />
-      <br />
-      <hr />
-      <br />
       <SearchLag />
     </>
   );
