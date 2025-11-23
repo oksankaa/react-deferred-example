@@ -25,22 +25,25 @@ export function SearchSmooth() {
   }, []);
 
   return (
-    <div className="autocomplete">
-      <h3>Filtering with useDeferredValue – smooth user experience</h3>
-      <div>Search for a location:</div>
-      <input
-        placeholder="Type here..."
-        value={searchValue}
-        onChange={handleChange}
-      />
-      <FilteredList
-        filteredLocation={filtered}
-        searchValue={searchValue}
-        isLocationSelected={isLocationSelected}
-        onSelect={handleSelect}
-      />
+   <div className='pb-border'>
+      <div className="autocomplete">
+        <h3>Smooth Search with useDeferredValue</h3>
+        <div>Search for a location:</div>
+        <input
+          placeholder="Type here..."
+          value={searchValue}
+          onChange={handleChange}
+        />
+        <FilteredList
+          filteredLocation={filtered}
+          searchValue={searchValue}
+          isLocationSelected={isLocationSelected}
+          onSelect={handleSelect}
+        />
+      </div>
     </div>
   );
 }
 
 export default SearchSmooth;
+
