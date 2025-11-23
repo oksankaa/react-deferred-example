@@ -5,6 +5,11 @@ body {
   padding: 20px;
 }
 
+.pb-border {
+  padding-bottom: 60px;
+  border-bottom: 1px solid #ccc;
+}
+
 .autocomplete {
   position: relative;
   display: inline-block;
